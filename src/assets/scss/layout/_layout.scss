@@ -1,0 +1,44 @@
+.ant-layout {
+  width: 100%;
+  background-color: $white;
+}
+
+.main-content {
+  margin-top: 80px;
+}
+
+.admin-layout {
+  -webkit-transition: width 0s ease 0.7s;
+  -moz-transition: width 0s ease 0.7s;
+  transition: width 0s ease 0.7s;
+  margin-top: 4rem;
+  margin-left: 250px;
+}
+
+.sideMenu {
+  // height: calc(100vh - 4rem);
+  position: fixed;
+  height: 100%;
+  margin-top: 4rem;
+  left: 0;
+  z-index: 999;
+  border-right: 1px solid #f0f0f0;
+}
+
+.pageHeader {
+  .ant-page-header {
+    background-color: #f5f2f2b6;
+  }
+}
+
+.pageContent {
+  padding: 1.5rem;
+}
+
+.ant-modal-content {
+  border-radius: 10px;
+}
+
+.ant-modal-header {
+  border-radius: 10px;
+}

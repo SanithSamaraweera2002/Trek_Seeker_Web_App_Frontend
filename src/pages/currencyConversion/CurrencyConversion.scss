@@ -1,0 +1,113 @@
+.currency-page-content {
+  padding: 0px 48px;
+  // background-color: #f4f4f4;
+  min-height: 100vh;
+  padding-top: 100px;
+
+  .currency-page-header {
+    margin-bottom: 24px;
+    // color: #003a8c;
+    text-align: center;
+  }
+
+  .currency-form {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+    .currency-selection {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .currency-select {
+        width: 45%;
+      }
+
+      .swap-button {
+        margin: 0 8px;
+        border-radius: 50%;
+        background-color: #1890ff;
+        color: #fff;
+        border: none;
+      }
+    }
+
+    .exchange-rate-display {
+      margin-top: 20px;
+      text-align: center;
+
+      p {
+        font-size: 16px;
+        color: #555;
+      }
+    }
+  }
+
+  .currency-rates {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+
+    .ant-table {
+      .ant-table-thead > tr > th {
+        text-align: center;
+        background: #fafafa;
+        font-weight: 600;
+        color: #333;
+      }
+
+      .ant-table-tbody > tr > td {
+        text-align: center;
+        color: #666;
+      }
+    }
+  }
+}
+
+.currency-flag {
+  width: 20px;
+  height: 15px;
+  margin-right: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+  .currency-page-content {
+    .ant-card-body {
+      padding: 18px;
+    }
+  }
+  .currency-page-header {
+    font-size: 24px !important;
+  }
+  .currency-select {
+    width: 100%;
+  }
+
+  .swap-button {
+    margin: 0 8px;
+    border-radius: 50%;
+    background-color: #1890ff;
+    color: #fff;
+    border: none;
+    height: 40px;
+    width: 40px;
+  }
+
+  .exchange-rate-display {
+    p {
+      font-size: 15px !important;
+    }
+  }
+
+  .currency-rates {
+    h3 {
+      font-size: 20px;
+    }
+  }
+}

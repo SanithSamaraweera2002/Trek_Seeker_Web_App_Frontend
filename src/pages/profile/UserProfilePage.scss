@@ -1,0 +1,118 @@
+.profile-page-content {
+  margin: 30px 48px;
+  padding: 12px 48px;
+}
+
+.profile-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+.profile-details {
+  .profile-details-left,
+  .profile-details-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-detail {
+    margin-bottom: 15px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    .profile-info {
+      display: flex;
+      align-items: center;
+
+      .profile-icon {
+        font-size: 18px;
+        margin-right: 10px;
+        color: #333;
+      }
+
+      .profile-label {
+        font-weight: bold;
+        color: #333;
+        font-size: 16px;
+        margin: 0;
+      }
+    }
+
+    .profile-value {
+      color: #666;
+      margin: 0;
+      margin-top: 5px;
+      padding-left: 30px;
+    }
+  }
+  .profile-image-wrapper {
+    width: 400px;
+    overflow: hidden;
+  }
+
+  .profile-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+// .password-requirements ul {
+//   list-style-type: none;
+//   padding: 0;
+// }
+
+// .password-requirements li {
+//   display: flex;
+//   align-items: center;
+//   margin-bottom: 8px;
+// }
+
+// .check-icon {
+//   width: 16px;
+//   height: 16px;
+//   border-radius: 50%;
+//   border: 1px solid #d9d9d9;
+//   margin-right: 8px;
+//   background-color: transparent;
+// }
+
+// .check-icon.checked {
+//   background-color: #52c41a; /* Green */
+// }
+
+// .fulfilled span {
+//   color: #52c41a; /* Green */
+// }
+
+.change-password-button {
+  width: 150px;
+  // background-color: #1890ff; /* Example background color */
+  // border: 1px solid #1890ff; /* Example border color */
+  color: #fff; /* Text color */
+  font-weight: bold; /* Make the text bold */
+  border-radius: 4px; /* Rounded corners */
+  margin-top: 8px;
+  margin-left: 30px;
+  // transition: background-color 0.3s, border-color 0.3s; /* Smooth transition effects */
+
+  // &:hover {
+  //   background-color: #40a9ff; /* Hover background color */
+  //   border-color: #40a9ff; /* Hover border color */
+  // }
+}
+
+@media only screen and (max-width: 600px) {
+  .profile-page-content {
+    margin: 30px 12px;
+    padding: 12px 20px;
+  }
+
+  .profile-image {
+    display: none !important;
+  }
+}
